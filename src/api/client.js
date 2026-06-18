@@ -1,7 +1,15 @@
 import axios from "axios";
 
+function apiUrl() {
+  var apiLocation = location.origin;
+  apiLocation = apiLocation.replace(":5173", "8080");
+
+  return apiLocation + import.meta.env.VITE_API_BASE_URL;
+}
+
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL,
+  baseURL: apiUrl(),
   headers: {
     "Content-Type": "application/json",
     Accept: "application/json",
