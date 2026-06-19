@@ -5,8 +5,9 @@ export const genericService = {
 
   getUsers: () => apiClient.get("/users"),
   registerUser: (data) => apiClient.post("/register", data),
-  updateUser: (id, data) => apiClient.patch(`/users/${id}`, data),
-  toggleUserStatus: (id) => apiClient.patch(`/users/status/${id}`),
+
+  updateUser: (id, data) => apiClient.put(`/users/${id}`, data),
+  toggleUserStatus: (id) => apiClient.put(`/users-status/${id}`),
 
   getEmployees: () => apiClient.get("/employees"),
   getBranches: () => apiClient.get("/branches"),
