@@ -4,7 +4,8 @@ import CustomBootstrapTable from "../../../components/CustomBootstrapTable/Custo
 const COLUMNS_CONFIG = [
   { field: "nombre", title: "Nombre", sortable: true },
   { field: "cedula", title: "Cedula", sortable: true, align: "center" },
-  { field: "departamento", title: "Depto", sortable: true, align: "center" },
+  { field: "centro_costo", title: "Centro de costo", sortable: true },
+  { field: "puesto", title: "Puesto", sortable: true },
   {
     field: "empresa.codigo",
     title: "Empresa",

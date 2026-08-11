@@ -3,12 +3,8 @@ import CustomBootstrapTable from "../../../components/CustomBootstrapTable/Custo
 
 const columns = [
   { field: "nombre", title: "Nombre", sortable: true },
-  {
-    field: "departamento",
-    title: "Departamento",
-    align: "center",
-    sortable: true,
-  },
+  { field: "centro_costo", title: "Centro de costo", sortable: true },
+  { field: "puesto", title: "Puesto", sortable: true },
   {
     field: "empresa.codigo",
     title: "Código",

@@ -101,7 +101,8 @@ const NewEmployeeMailPreview = ({ activeTab, config }) => {
                       <li className="mail-preview-employee-item">
                         <span className="mail-preview-emp-name">Usuario 1</span>
                         <span className="mail-preview-dept-tag">
-                          Se incorpora al departamento de Tecnología
+                          Se incorpora al puesto de contador al departamento de
+                          Administración
                         </span>
                       </li>
                     </ul>
@@ -147,7 +148,8 @@ const NewEmployeeMailPreview = ({ activeTab, config }) => {
                   </div>
                   <div className="mail-preview-employee-item">
                     <span className="mail-preview-dept-tag mail-preview-dept-tag-uppercase">
-                      Se incorpora al departamento de Tecnología
+                      Se incorpora al puesto de contador al departamento de
+                      Administración
                     </span>
                     <span className="mail-preview-emp-name">Usuario 1</span>
                   </div>

@@ -4,7 +4,8 @@ import CustomBootstrapTable from "../../../components/CustomBootstrapTable/Custo
 const EmployeeList = ({ employees, isLoading }) => {
   const columns = [
     { field: "Nombre", title: "Nombre Completo", sortable: true },
-    { field: "Departamento", title: "Departamento", sortable: true },
+    { field: "Centro_Costo", title: "Centro de costo", sortable: true },
+    { field: "Puesto", title: "Puesto", sortable: true },
     { field: "Empresa", title: "Cod. Sede", align: "center" },
     {
       field: "Cumple",
