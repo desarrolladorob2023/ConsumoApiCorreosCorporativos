@@ -27,60 +27,90 @@ function App() {
     <Routes>
       <Route
         path="/login"
-        element={<Login onLoginSuccess={handleLoginSuccess} />}
+        element={
+          !user ? (
+            <Login onLoginSuccess={handleLoginSuccess} />
+          ) : (
+            <Navigate to="/" />
+          )
+        }
       />
 
       <Route
         path="/"
         element={
-          <Layout user={user}>
-            <Home />
-          </Layout>
+          user ? (
+            <Layout user={user}>
+              <Home />
+            </Layout>
+          ) : (
+            <Navigate to="/login" />
+          )
         }
       />
 
       <Route
         path="/users"
         element={
-          <Layout user={user}>
-            <UserPage />
-          </Layout>
+          user ? (
+            <Layout user={user}>
+              <UserPage />
+            </Layout>
+          ) : (
+            <Navigate to="/login" />
+          )
         }
       />
 
       <Route
         path="/new-employees"
         element={
-          <Layout user={user}>
-            <NewEmployeesPage />
-          </Layout>
+          user ? (
+            <Layout user={user}>
+              <NewEmployeesPage />
+            </Layout>
+          ) : (
+            <Navigate to="/login" />
+          )
         }
       />
 
       <Route
         path="/settings"
         element={
-          <Layout user={user}>
-            <Settings />
-          </Layout>
+          user ? (
+            <Layout user={user}>
+              <Settings />
+            </Layout>
+          ) : (
+            <Navigate to="/login" />
+          )
         }
       />
 
       <Route
         path="/settings/new-employees"
         element={
-          <Layout user={user}>
-            <NewEmployeeMailSettings />
-          </Layout>
+          user ? (
+            <Layout user={user}>
+              <NewEmployeeMailSettings />
+            </Layout>
+          ) : (
+            <Navigate to="/login" />
+          )
         }
       />
 
       <Route
         path="/ayuda"
         element={
-          <Layout user={user}>
-            <HelpPage />
-          </Layout>
+          user ? (
+            <Layout user={user}>
+              <HelpPage />
+            </Layout>
+          ) : (
+            <Navigate to="/login" />
+          )
         }
       />
 
